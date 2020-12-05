@@ -18,5 +18,13 @@
 
 ## 配線図
 配線図は図のとおりである。GPIO22が1桁目、GPIO23が2桁目、GPIO24が3桁目、GPIO25が4桁目。
+![配線図](https://github.com/IGC8810/raspi4_led_driver/blob/main/robosys_schema.PNG)
 
 ## 実行コマンド
+raspi4_led_driver内のsrcディレクトリに移動
+$ make
+$ sudo insmod myled.ko
+$ sudo chmod 666 /dev/myled0
+$ echo F > /dev/myled0
+$ echo 0 > /dev/myled0
+$ sudo rmmod myled
