@@ -21,10 +21,10 @@
 ![配線図](https://github.com/IGC8810/raspi4_led_driver/blob/main/robosys_schema.PNG)
 
 ## 実行コマンド
-raspi4_led_driver内のsrcディレクトリに移動
-$ make
-$ sudo insmod myled.ko
-$ sudo chmod 666 /dev/myled0
-$ echo F > /dev/myled0
-$ echo 0 > /dev/myled0
+raspi4_led_driver内のsrcディレクトリに移動<br>
+$ make <br>
+$ sudo insmod myled.ko <br>
+$ sudo chmod 666 /dev/myled0 <br>
+$ echo F > /dev/myled0 <br>
+$ echo 0 > /dev/myled0 <br>
 $ sudo rmmod myled
